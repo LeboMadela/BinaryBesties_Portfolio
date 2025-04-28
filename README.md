@@ -1,4 +1,9 @@
 # BinaryBesties_Portfolio
+# Group Members:
+1. Niniwe Xaka
+2. Moleboheng Madela
+3. Veronica Moshesha
+
 # UI Portfolio Website
 
 This repository contains the HTML, CSS, and JavaScript code for a personal portfolio website showcasing the skills and work of a UI Designer and Web Developer named John Watson.
