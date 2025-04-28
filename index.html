@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- google-fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- //google-fonts -->
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <!-- Text Logo -->
+                <a href="#" class="logo">UI Portfolio</a>
+
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">
+                            Pages <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="1,1 5,5 9,1"></polyline>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Blog Page</a></li>
+                            <li><a href="#">Elements Page</a></li>
+                            <li><a href="#">404 Page</a></li>
+                            <li><a href="#">Landing Page</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <!-- Call to Action & Icons -->
+                <div class="nav-actions">
+                    <a href="#" class="btn btn-primary">Hire Me</a>
+                    <button class="icon-btn search-btn" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="currentColor" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <button class="icon-btn theme-toggle" aria-label="Toggle theme">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content-wrapper">
+            <!-- Left: Textual Content -->
+            <div class="hero-text-content">
+                <p class="hero-intro">Hi, I’m <strong>John Watson</strong></p>
+                <div class="animated-text"></div>
+                <p class="hero-description">
+                    I love Graphic design and Photography and have been working on my portfolio since 2016.
+                    I can give your business a new Creative start right away!
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Hire Me</a>
+                    <a href="#" class="btn btn-secondary">My Portfolio</a>
+                </div>
+            </div>
+
+            <!-- Right: Image -->
+            <div class="hero-image">
+                <img src="banner.png" alt="John Watson">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
