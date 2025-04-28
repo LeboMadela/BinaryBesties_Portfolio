@@ -777,6 +777,72 @@ footer {
     transform: scale(1.2);
 }
 
+/* Light Mode: Default styles — no changes needed */
+
+/* Default: Light Theme - Your normal site */
+
+/* Dark Theme activated on body */
+body.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Update all key sections */
+body.dark-theme header,
+body.dark-theme footer,
+body.dark-theme section,
+body.dark-theme .services-content,
+body.dark-theme .services,
+body.dark-theme .brands,
+body.dark-theme .portfolio,
+body.dark-theme .contact,
+body.dark-theme .social-icons {
+    background-color: #1e1e1e;
+}
+
+/* Update text inside sections */
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme p,
+body.dark-theme a {
+    color: #e0e0e0;
+}
+
+/* Buttons */
+body.dark-theme .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+body.dark-theme .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Social Icons */
+body.dark-theme .social-icons a {
+    color: #ffffff;
+}
+
+/* Service items, portfolio items, etc */
+body.dark-theme .service-item,
+body.dark-theme .portfolio-item,
+body.dark-theme .brand-item {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+/* Icons always white */
+.icon-btn,
+body.dark-theme .icon-btn {
+    color: #ffffff;
+}
+
+/* Smooth transition */
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .hero-content-wrapper {
