@@ -6,27 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <!-- Link your CSS file -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Linotte:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header / Navigation -->
     <header>
         <nav class="navbar">
             <div class="container">
-                <!-- Text Logo -->
                 <a href="#" class="logo">UI Portfolio</a>
 
-                <!-- Navigation Links -->
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn">
-                            Pages <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                            Pages
+                            <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="6"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <polyline points="1,1 5,5 9,1"></polyline>
@@ -39,12 +39,11 @@
                             <li><a href="#">Landing Page</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
 
-                <!-- Call to Action & Icons -->
                 <div class="nav-actions">
-                    <a href="#" class="btn btn-primary">Hire Me</a>
+                    <a href="#portfolio" class="btn btn-primary">Hire Me</a>
                     <button class="icon-btn search-btn" aria-label="Search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="currentColor" fill="none"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -59,15 +58,18 @@
                             <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path> <!-- This is the moon icon -->
                         </svg>
                     </button>
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="container hero-content-wrapper">
-            <!-- Left: Textual Content -->
             <div class="hero-text-content">
                 <h1 class="hero-intro">Hi, I'm John Watson</h1>
                 <div class="animated-text"></div>
@@ -81,15 +83,17 @@
                 </div>
             </div>
 
-            <!-- Right: Image -->
             <div class="hero-image">
                 <img src="images/banner.png" alt="John Watson">
             </div>
         </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </section>
-
+  
     <!-- ========== Biography Section Start ========== -->
-    <section class="bio-section">
+    <section id="about" class="bio-section">
         <div class="bio-container">
             <div class="bio-image">
                 <img src="images/about.jpg" alt="John Watson">
@@ -125,11 +129,14 @@
                 </div>
             </div>
         </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </section>
-    <!-- ========== Biography Section End ========== -->
-
-    <!-- ========== Services Section Start ========== -->
-    <section class="services-section">
+  <!-- ========== Biography Section End ========== -->
+  
+  <!-- ========== Services Section Start ========== -->
+    <section id="services" class="services-section">
         <div class="services-container">
             <h2>What I Do For You</h2>
             <div class="services-cards">
@@ -157,17 +164,20 @@
                 <a href="#">More Services →</a>
             </div>
         </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </section>
     <!-- ========== Services Section End ========== -->
-
+      
     <!-- ========== Skills Section Start ========== -->
     <section id="skills" class="skills-section">
         <div class="skills-content">
             <div class="skills-image-container">
                 <img src="images/about1.jpg" alt="Skills Image" class="skills-image">
                 <div class="torn-effect">
-                </div> <!-- White box added -->
-            </div>
+                </div>
+                </div>
 
             <div class="skills-text">
                 <h5>MY SKILLS</h5>
@@ -206,9 +216,12 @@
                 </div>
             </div>
         </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </section>
     <!-- ========== Skills Section End ========== -->
-
+     
     <!-- Additional Services Section -->
     <section class="services">
         <div class="services-content">
@@ -242,7 +255,11 @@
                 <img src="images/banner.png" alt="Profile Image">
             </div>
         </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </section>
+    <!-- Additional Services Section Ends -->      
 
     <section class="counters">
         <div class="counter-container">
@@ -263,9 +280,11 @@
                 <p>Happy Customers</p>
             </div>
         </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </section>
-    <!-- Portfolio Section -->
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <h2>My Success Work</h2>
         <div class="gallery">
             <img src="images/blog1.jpg" alt="Blog 1">
@@ -275,9 +294,11 @@
             <img src="images/blog5.jpg" alt="Blog 5">
             <img src="images/blog6.jpg" alt="Blog 6">
         </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </section>
 
-    <!-- Brands Section -->
     <section class="brands">
         <div class="brands-slider">
             <div class="brands-track" id="brands-track">
@@ -294,11 +315,27 @@
                 <img src="images/logo2.png" alt="Logo 2 Tripple">
                 <img src="images/logo3.png" alt="Logo 3 Tripple">
             </div>
+        </a>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>My Success Work</h2>
+        <div class="gallery">
+            <img src="images/blog1.jpg" alt="Blog 1">
+            <img src="images/blog2.jpg" alt="Blog 2">
+            <img src="images/blog3.jpg" alt="Blog 3">
+            <img src="images/blog4.jpg" alt="Blog 4">
+            <img src="images/blog5.jpg" alt="Blog 5">
+            <img src="images/blog6.jpg" alt="Blog 6">
+        </div>
     </section>
 
-
     <!-- Footer Section -->
-    <footer>
+    <footer id="footer">
         <div class="footer-top">
             <h3>UI Portfolio</h3>
             <p>
@@ -306,6 +343,9 @@
                 <i class="fas fa-envelope"></i> info@example.com &nbsp; | &nbsp;
                 <i class="fas fa-map-marker-alt"></i> 204 Avenue street, UK - 62617.
             </p>
+            <a href="#home" class="back-to-top back-to-top-left green">
+                <i class="fas fa-arrow-up"></i>
+            </a>
         </div>
 
         <div class="footer-bottom">
