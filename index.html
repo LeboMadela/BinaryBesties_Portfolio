@@ -6,31 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <!-- Link your CSS file -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- google-fonts -->
-    <link href="//fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- //google-fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Linotte:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header / Navigation -->
     <header>
         <nav class="navbar">
             <div class="container">
-                <!-- Text Logo -->
                 <a href="#" class="logo">UI Portfolio</a>
 
-                <!-- Navigation Links -->
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn">
-                            Pages <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                            Pages
+                            <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="6"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <polyline points="1,1 5,5 9,1"></polyline>
@@ -43,12 +41,11 @@
                             <li><a href="#">Landing Page</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
 
-                <!-- Call to Action & Icons -->
                 <div class="nav-actions">
-                    <a href="#" class="btn btn-primary">Hire Me</a>
+                    <a href="#portfolio" class="btn btn-primary">Hire Me</a>
                     <button class="icon-btn search-btn" aria-label="Search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="currentColor" fill="none"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -57,22 +54,25 @@
                         </svg>
                     </button>
                     <button class="icon-btn theme-toggle" aria-label="Toggle theme">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-                        </svg>
+                            </svg>
                     </button>
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="container hero-content-wrapper">
-            <!-- Left: Textual Content -->
             <div class="hero-text-content">
-                <p class="hero-intro">Hi, I’m <strong>John Watson</strong></p>
+                <h1 class="hero-intro">Hi, I'm John Watson</h1>
                 <div class="animated-text"></div>
                 <p class="hero-description">
                     I love Graphic design and Photography and have been working on my portfolio since 2016.
@@ -84,45 +84,263 @@
                 </div>
             </div>
 
-            <!-- Right: Image -->
             <div class="hero-image">
-                <img src="banner.png" alt="John Watson">
+                <img src="images/banner.png" alt="John Watson">
             </div>
         </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </section>
 
-       <main>
-        <section>
-            <h2>Services</h2>
-            <div class="services-container">
-                <div class="card" id="web-development" onclick="showDetails('Web Development')">
-                    <h3>Web Development</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium.</p>
+    <section id="about" class="bio-section">
+        <div class="bio-container">
+            <div class="bio-image">
+                <img src="images/about.jpg" alt="John Watson">
+            </div>
+            <div class="bio-content">
+                <h5>MY BIOGRAPHY</h5>
+                <h2>A Lead UI Designer & Web <br> Developer Based In UK</h2>
+                <p>I love Graphic design and Photography and have been working on my portfolio since 2016. I can give
+                    your business a new Creative start right away! Contact me and we will discuss your projects!</p>
+
+                <div class="bio-details">
+                    <div class="bio-details-column">
+                        <p><strong>Name:</strong> John Watson</p>
+                        <p><strong>Email:</strong> example@mail.com</p>
+                    </div>
+                    <div class="bio-details-column">
+                        <p><strong>From:</strong> London, UK</p>
+                        <p><strong>Phone:</strong> +21 234 567 8901</p>
+                    </div>
                 </div>
-                <div class="card" id="app-development" onclick="showDetails('App Development')">
-                    <h3>App Development</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium.</p>
+
+                <div class="bio-socials">
+                    <span><b>Follow me on</b></span>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
-                <div class="card" id="photography" onclick="showDetails('Photography')">
-                    <h3>Photography</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium.</p>
-                </div>
-                <div class="card" id="seo-marketing" onclick="showDetails('SEO Marketing')">
-                    <h3>SEO Marketing</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium.</p>
-                </div>
-                <div class="card" id="responsive-design" onclick="showDetails('Responsive Design')">
-                    <h3>Responsive Design</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium.</p>
-                </div>
-                <div class="card" id="digital-marketing" onclick="showDetails('Digital Marketing')">
-                    <h3>Digital Marketing</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium.</p>
+
+                <div class="bio-buttons">
+                    <a href="#" class="btn-primary">Hire me</a>
+                    <a href="#" class="btn-secondary">Download CV</a>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <h2>What I Do For You</h2>
+            <div class="services-cards">
+
+                <div class="service-card">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium dolor emque laudantium.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                    <h3>App development</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium dolor emque laudantium.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-camera service-icon"></i>
+                    <h3>Photography</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium dolor emque laudantium.</p>
+                </div>
+
+            </div>
+            <div class="services-link">
+                <a href="#">More Services →</a>
+            </div>
+        </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>
+    <section id="skills" class="skills-section">
+        <div class="skills-content">
+            <div class="skills-image-container">
+                <img src="images/about1.jpg" alt="Skills Image" class="skills-image">
+                <div class="torn-effect">
+                </div>
+                </div>
+
+            <div class="skills-text">
+                <h5>MY SKILLS</h5>
+                <h2>My Featured Skills</h2>
+                <p>
+                    I specialize in Branding and Strategy, and am passionate about creating Awesome Portfolio work.
+                    I am always ready to impress the audience with my Creativity.
+                </p>
+
+                <div class="skill">
+                    <h4>UI/UX Design</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Ideas & Technology</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Branding Design</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Responsive Web Design</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>
+    <section class="services">
+        <div class="services-content">
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Design Trends</h3>
+                    <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Research & Analysis</h3>
+                    <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Customer Support</h3>
+                    <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Responsive Design</h3>
+                    <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+                </div>
+                <div class="service-item">
+                    <h3>PSD Design</h3>
+                    <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+                </div>
+            </div>
+            <div class="services-image">
+                <img src="images/banner.png" alt="Profile Image">
+            </div>
+        </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>
+
+    <section class="counters">
+        <div class="counter-container">
+            <div class="counter-box">
+                <h2 class="counter" data-target="135">0</h2>
+                <p>Finished Projects</p>
+            </div>
+            <div class="counter-box">
+                <h2 class="counter" data-target="225">0</h2>
+                <p>Working Hours</p>
+            </div>
+            <div class="counter-box">
+                <h2 class="counter" data-target="115">0</h2>
+                <p>Online Support</p>
+            </div>
+            <div class="counter-box">
+                <h2 class="counter" data-target="272">0</h2>
+                <p>Happy Customers</p>
+            </div>
+        </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2>My Success Work</h2>
+        <div class="gallery">
+            <img src="images/blog1.jpg" alt="Blog 1">
+            <img src="images/blog2.jpg" alt="Blog 2">
+            <img src="images/blog3.jpg" alt="Blog 3">
+            <img src="images/blog4.jpg" alt="Blog 4">
+            <img src="images/blog5.jpg" alt="Blog 5">
+            <img src="images/blog6.jpg" alt="Blog 6">
+        </div>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>
+
+    <section class="brands">
+        <div class="brands-slider">
+            <div class="brands-track" id="brands-track">
+                <img src="images/logo4.png" alt="Logo 4">
+                <img src="images/logo1.png" alt="Logo 1">
+                <img src="images/logo2.png" alt="Logo 2">
+                <img src="images/logo3.png" alt="Logo 3">
+                <img src="images/logo4.png" alt="Logo 4 Duplicate">
+                <img src="images/logo1.png" alt="Logo 1 Duplicate">
+                <img src="images/logo2.png" alt="Logo 2 Duplicate">
+                <img src="images/logo3.png" alt="Logo 3 Duplicate">
+                <img src="images/logo4.png" alt="Logo 4 Tripple">
+                <img src="images/logo1.png" alt="Logo 1 Tripple">
+                <img src="images/logo2.png" alt="Logo 2 Tripple">
+                <img src="images/logo3.png" alt="Logo 3 Tripple">
+            </div>
+        </a>
+        <a href="#home" class="back-to-top back-to-top-left green">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>
+
+
+    <footer id="footer">
+        <div class="footer-top">
+            <h3>UI Portfolio</h3>
+            <p>
+                <i class="fas fa-phone-alt"></i> +12 345 678 900 &nbsp; | &nbsp;
+                <i class="fas fa-envelope"></i> info@example.com &nbsp; | &nbsp;
+                <i class="fas fa-map-marker-alt"></i> 204 Avenue street, UK - 62617.
+            </p>
+            <a href="#home" class="back-to-top back-to-top-left green">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-content">
+                <p>© 2023 UI Portfolio. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
